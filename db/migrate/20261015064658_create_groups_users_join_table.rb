@@ -11,6 +11,5 @@ class CreateGroupsUsersJoinTable < ActiveRecord::Migration[8.1]
     end
 
     add_index :groups_users, [ :group_id, :user_id ], unique: true
-    add_index :groups_users, :user_id
   end
 end
